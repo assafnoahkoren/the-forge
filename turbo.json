@@ -1,7 +1,20 @@
 {
   "$schema": "https://turborepo.com/schema.json",
   "ui": "tui",
-  "globalEnv": ["PORT", "NODE_ENV"],
+  "globalEnv": [
+    "PORT",
+    "NODE_ENV",
+    "DATABASE_URL",
+    "RABBITMQ_URL",
+    "SMTP_HOST",
+    "SMTP_PORT",
+    "TWILIO_ACCOUNT_SID",
+    "TWILIO_AUTH_TOKEN",
+    "TWILIO_PHONE_NUMBER",
+    "FCM_SERVER_KEY",
+    "APNS_KEY_ID",
+    "APNS_TEAM_ID"
+  ],
   "tasks": {
     "build": {
       "dependsOn": ["^build"]
