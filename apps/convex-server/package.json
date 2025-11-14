@@ -2,6 +2,9 @@
   "name": "convex-server",
   "private": true,
   "version": "0.0.0",
+  "exports": {
+    "./convex": "./convex/_generated/api.js"
+  },
   "scripts": {
     "dev": "convex dev",
     "predev": "convex dev --until-success && convex dashboard",
