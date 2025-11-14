@@ -1,3 +1,9 @@
 import { defineSchema } from "convex/server";
+import { authTables } from "@convex-dev/auth/server";
 
-export default defineSchema({}, { schemaValidation: true });
+export default defineSchema(
+  {
+    ...authTables,
+  },
+  { schemaValidation: true }
+);

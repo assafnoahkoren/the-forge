@@ -9,6 +9,8 @@
     "lint": "tsc -p convex && eslint . --report-unused-disable-directives --max-warnings 0"
   },
   "dependencies": {
+    "@auth/core": "^0.37.0",
+    "@convex-dev/auth": "^0.0.90",
     "convex": "^1.29.0"
   },
   "devDependencies": {
